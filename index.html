@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>JavaScript - UAE Leaders</title>
+<script language="JavaScript">
+function capital()
+{
+var n,answer;
+n=document.frmcapital.cbostate.selectedIndex;
+switch (n)
+{
+    case 0:
+    answer="Sheikh Mohamed bin Zayed Al Nahyan";
+    break;
+    case 1:
+    answer="Mohammed bin Rashid Al Maktoum";
+    break;
+    case 2:
+    answer="Sheikh Sultan bin Muhammad Al-Qasimi";
+    break;
+    case 3:
+    answer="Sheikh Humaid bin Rashid Al Nuaimi III";
+    break;
+    case 4:
+    answer="Sheikh Saud bin Saqr Al Qasimi";
+    break;
+    case 5:
+    answer="Sheikh Hamad bin Mohammad Al Sharqi";
+    break;
+    case 6:
+    answer="Sheikh Saud bin Rashid Al Mualla";
+    break;
+}
+document.frmcapital.txtcapital.value=answer;
+}
+</script>
+</head>
+<body bgcolor="pink">
+<form Name="frmcapital">
+<center>Emirate
+<select size="1" Name="cbostate">
+<option>Abu Dhabi</option>
+<option>Dubai</option>
+<option>Sharjah</option>
+<option>Ajman</option>
+<option>Ras Al Khaimah</option>
+<option>Fujairah</option>
+<option>Umm Al Quwain</option>
+</select>
+<br>
+Leaders
+<input type="text" Name="txtcapital" size=40>
+<br>
+<input type="button" Value="show" onClick="capital()">
+</center>
+</FORM>
+</body>
+
+</html>
